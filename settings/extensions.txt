@@ -1,0 +1,6 @@
+Game Maker 8.2 Audio
+Game Maker 8.2 Core
+Game Maker 8.2 DirectX8
+GM Printing
+GM Room Transitions
+GM Windows Dialogs
