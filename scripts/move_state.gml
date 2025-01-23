@@ -9,16 +9,24 @@ image_speed = 0.2;
 hspd = 0;
 vspd = 0;
 
+// Adjust speed for running
+var current_spd;
+if (keyboard_check(vk_shift) || keyboard_check(ord('X'))) {
+    current_spd = runspd; // Running speed
+} else {
+    current_spd = spd; // Normal speed
+}
+
 //Set speed to the direction you are pressing as long as there isn't a wall there
 //Left and up take precedence
 
-if(right && !place_meeting(x+1,y,obj_soildsmall)) hspd = spd;
+if(right && !place_meeting(x+1,y,obj_soildsmall)) hspd = current_spd;
 
-if(left && !place_meeting(x-1,y,obj_soildsmall)) hspd = -spd;
+if(left && !place_meeting(x-1,y,obj_soildsmall)) hspd = -current_spd;
 
-if(down && !place_meeting(x,y+1,obj_soildsmall)) vspd = spd;
+if(down && !place_meeting(x,y+1,obj_soildsmall)) vspd = current_spd;
 
-if(up && !place_meeting(x,y-1,obj_soildsmall)) vspd = -spd;
+if(up && !place_meeting(x,y-1,obj_soildsmall)) vspd = -current_spd;
 
 //Prevent stuttering if against a wall pressing opposite directional buttons
 

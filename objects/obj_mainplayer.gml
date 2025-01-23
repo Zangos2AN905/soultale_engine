@@ -8,6 +8,7 @@ applies_to=self
 
 //Maximum speed
 spd = 4;
+runspd = 6;
 
 //Current movement speed
 hspd = 0;
