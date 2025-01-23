@@ -1,0 +1,8 @@
+extension=.mid
+exists=1
+source=rude_buster_kanef.mid
+kind=1
+effects=0
+volume=1
+pan=0
+preload=1
