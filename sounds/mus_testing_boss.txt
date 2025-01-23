@@ -1,0 +1,8 @@
+extension=.mid
+exists=1
+source=Deltarune_-_The_World_Revolving_-_MIDI_by_LukeeGD.mid
+kind=1
+effects=0
+volume=1
+pan=0
+preload=1
