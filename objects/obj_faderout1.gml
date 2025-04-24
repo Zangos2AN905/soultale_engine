@@ -11,9 +11,9 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if alpha < 1
+if alpha >= 0
 {
-alpha=+0.05
+alpha+=0.25
 }
 
 if alpha = 1
@@ -26,5 +26,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+draw_set_alpha(alpha); // Set transparency
 draw_set_color(c_black)
-draw_sprite_ext(spr_fade,0,view_xview[0],view_yview[0],1,1,0,c_white,alpha)
+draw_rectangle(0,0,room_width,room_height,false)
